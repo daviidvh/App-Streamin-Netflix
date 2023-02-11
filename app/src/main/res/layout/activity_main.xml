@@ -5,17 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="34dp"
+    tools:layout_editor_absoluteY="0dp">
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="287dp"
+        android:layout_width="269dp"
         android:layout_height="39dp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402"
         app:srcCompat="@drawable/banner" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -101,8 +118,8 @@
 
                     <ImageButton
                         android:id="@+id/usuario2"
-                        android:layout_width="110dp"
-                        android:layout_height="105dp"
+                        android:layout_width="108dp"
+                        android:layout_height="104dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/usuario2"
                         android:scaleType="centerInside" />
@@ -140,7 +157,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:layout_width="153dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -211,4 +228,5 @@
         </TableRow>
 
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

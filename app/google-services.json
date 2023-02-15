@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "315785601320",
+    "project_id": "loginnetflix-c63bc",
+    "storage_bucket": "loginnetflix-c63bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315785601320:android:0213afb657f0eeeaaf301d",
+        "android_client_info": {
+          "package_name": "com.example.proyectoprctica_eval2_guiappstreaming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315785601320-c9r9mp3fc497qqqh0robkvhil5m7c95m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB64uNjT92RNzHPDxlLvsp-6L1HqebOjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315785601320-c9r9mp3fc497qqqh0robkvhil5m7c95m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

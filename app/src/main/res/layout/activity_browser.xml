@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="#070707"
+    android:background="#141414"
     tools:context=".browser">
 
     <LinearLayout
@@ -72,18 +72,19 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
                     android:layout_weight="1"
-                    android:text="Tendencias ahora"
+                    android:text="Las 10 películas más populares hoy en este país: España"
                     android:textColor="#FAFAFA"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -93,7 +94,7 @@
                 android:orientation="horizontal">
 
                 <HorizontalScrollView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
                     <LinearLayout
@@ -102,111 +103,240 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="127dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
-                                android:id="@+id/imageViewTendencia1"
-                                android:layout_width="81dp"
-                                android:layout_height="90dp"
-                                app:srcCompat="@drawable/usuario1" />
+                                android:id="@+id/imageView2"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/uno" />
 
-                            <TextView
-                                android:id="@+id/Tendencia1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="TextView" />
+                            <ImageButton
+                                android:id="@+id/imageButton3"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/tucasaolamia"
+                                android:scaleType="centerInside" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="127dp">
 
                             <ImageView
-                                android:id="@+id/imageViewTendencia2"
-                                android:layout_width="81dp"
-                                android:layout_height="90dp"
-                                app:srcCompat="@drawable/usuario1" />
+                                android:id="@+id/imageView3"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/dos" />
 
-                            <TextView
-                                android:id="@+id/textViewTendencia2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="TextView" />
+                            <ImageButton
+                                android:id="@+id/imageButton4"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/it"
+                                android:scaleType="centerInside" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="127dp">
 
                             <ImageView
-                                android:id="@+id/imageViewTendencia3"
-                                android:layout_width="81dp"
-                                android:layout_height="90dp"
-                                app:srcCompat="@drawable/usuario1" />
+                                android:id="@+id/imageView4"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/tres" />
 
-                            <TextView
-                                android:id="@+id/textViewTendencia3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="TextView" />
+                            <ImageButton
+                                android:id="@+id/imageButton5"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/snakeeyes"
+                                android:scaleType="centerInside" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
 
                             <ImageView
-                                android:id="@+id/imageViewTendencia4"
-                                android:layout_width="81dp"
-                                android:layout_height="90dp"
-                                app:srcCompat="@drawable/usuario1" />
+                                android:id="@+id/imageView6"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/cuatro" />
 
-                            <TextView
-                                android:id="@+id/textViewTendencia4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="TextView" />
+                            <ImageButton
+                                android:id="@+id/imageButton6"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/amoralcuadrado"
+                                android:scaleType="centerInside" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
 
                             <ImageView
-                                android:id="@+id/imageViewTendencia5"
-                                android:layout_width="81dp"
-                                android:layout_height="90dp"
-                                app:srcCompat="@drawable/usuario1" />
+                                android:id="@+id/imageView7"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/cinco" />
 
-                            <TextView
-                                android:id="@+id/textViewTendencia5"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="TextView" />
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/adios"
+                                android:scaleType="centerInside" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
 
                             <ImageView
-                                android:id="@+id/imageViewTendencia6"
-                                android:layout_width="81dp"
-                                android:layout_height="90dp"
-                                app:srcCompat="@drawable/usuario1" />
+                                android:id="@+id/imageView8"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/seis" />
 
-                            <TextView
-                                android:id="@+id/textViewTendencia6"
-                                android:layout_width="match_parent"
+                            <ImageButton
+                                android:id="@+id/imageButton8"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/infiesto"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/siete"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_marginLeft="5dp" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton9"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/lasbrujas" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="41dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/ocho" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton10"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/lavidaenjuego"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="41dp"
                                 android:layout_height="wrap_content"
-                                android:text="TextView" />
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/nueve" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton11"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/cuestionjuridica"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="127dp" >
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="41dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="-7dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/diez" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton12"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/joker"
+                                android:scaleType="centerInside" />
                         </LinearLayout>
 
                     </LinearLayout>

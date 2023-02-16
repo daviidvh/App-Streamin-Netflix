@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@color/black"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="34dp"
@@ -13,32 +14,20 @@
         android:id="@+id/imageView5"
         android:layout_width="269dp"
         android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/banner" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="19dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/editar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="396dp"
         android:layout_height="457dp"
-        android:layout_marginBottom="168dp"
+        android:layout_marginBottom="104dp"
         android:foregroundGravity="center"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -229,5 +218,17 @@
         </TableRow>
 
     </TableLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

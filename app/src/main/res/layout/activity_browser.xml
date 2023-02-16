@@ -31,19 +31,21 @@
         <LinearLayout
             android:layout_width="243dp"
             android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
             android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="31dp"
                 android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
                 android:background="@drawable/lupa" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
@@ -55,20 +57,183 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="173dp"
-        android:orientation="horizontal"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="405dp"
+        android:layout_height="588dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tendencias ahora"
+                    android:textColor="#FAFAFA"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="147dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewTendencia1"
+                                android:layout_width="81dp"
+                                android:layout_height="90dp"
+                                app:srcCompat="@drawable/usuario1" />
+
+                            <TextView
+                                android:id="@+id/Tendencia1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewTendencia2"
+                                android:layout_width="81dp"
+                                android:layout_height="90dp"
+                                app:srcCompat="@drawable/usuario1" />
+
+                            <TextView
+                                android:id="@+id/textViewTendencia2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewTendencia3"
+                                android:layout_width="81dp"
+                                android:layout_height="90dp"
+                                app:srcCompat="@drawable/usuario1" />
+
+                            <TextView
+                                android:id="@+id/textViewTendencia3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewTendencia4"
+                                android:layout_width="81dp"
+                                android:layout_height="90dp"
+                                app:srcCompat="@drawable/usuario1" />
+
+                            <TextView
+                                android:id="@+id/textViewTendencia4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewTendencia5"
+                                android:layout_width="81dp"
+                                android:layout_height="90dp"
+                                app:srcCompat="@drawable/usuario1" />
+
+                            <TextView
+                                android:id="@+id/textViewTendencia5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewTendencia6"
+                                android:layout_width="81dp"
+                                android:layout_height="90dp"
+                                app:srcCompat="@drawable/usuario1" />
+
+                            <TextView
+                                android:id="@+id/textViewTendencia6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="166dp"
+        android:layout_width="406dp"
+        android:layout_height="62dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"></LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

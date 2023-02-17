@@ -12,6 +12,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="412dp"
         android:layout_height="69dp"
+        android:background="#BE0B0B0B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -48,11 +49,12 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imagen_usuario"
+            <ImageButton
+                android:id="@+id/imagenUsuario"
                 android:layout_width="43dp"
                 android:layout_height="40dp"
-                app:srcCompat="@drawable/usuario1" />
+                android:scaleType="center"
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
 
     </LinearLayout>
@@ -72,35 +74,19 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="311dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:text="Las 10 películas más populares hoy en este país: España"
-                    android:textColor="#FAFAFA"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="147dp"
+                android:layout_height="165dp"
                 android:orientation="horizontal">
 
                 <HorizontalScrollView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
 
                         <LinearLayout
                             android:layout_width="127dp"
@@ -119,7 +105,7 @@
                                 app:srcCompat="@drawable/uno" />
 
                             <ImageButton
-                                android:id="@+id/imageButton3"
+                                android:id="@+id/pelicula1"
                                 android:layout_width="71dp"
                                 android:layout_height="131dp"
                                 android:layout_weight="1"
@@ -177,7 +163,7 @@
 
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp">
 
                             <ImageView
                                 android:id="@+id/imageView6"
@@ -201,7 +187,7 @@
 
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp">
 
                             <ImageView
                                 android:id="@+id/imageView7"
@@ -225,7 +211,7 @@
 
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp">
 
                             <ImageView
                                 android:id="@+id/imageView8"
@@ -249,18 +235,18 @@
 
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp">
 
                             <ImageView
                                 android:id="@+id/imageView9"
                                 android:layout_width="41dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/siete"
+                                android:layout_marginLeft="5dp"
                                 android:layout_marginTop="30dp"
                                 android:layout_marginRight="-7dp"
-                                android:layout_marginLeft="5dp" />
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/siete" />
 
                             <ImageButton
                                 android:id="@+id/imageButton9"
@@ -269,9 +255,10 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/lasbrujas" />
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp">
 
                             <ImageView
                                 android:id="@+id/imageView10"
@@ -292,9 +279,10 @@
                                 android:background="@drawable/lavidaenjuego"
                                 android:scaleType="centerInside" />
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp">
 
                             <ImageView
                                 android:id="@+id/imageView11"
@@ -315,9 +303,11 @@
                                 android:background="@drawable/cuestionjuridica"
                                 android:scaleType="centerInside" />
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="127dp"
-                            android:layout_height="127dp" >
+                            android:layout_height="127dp"
+                            android:paddingRight="10dp">
 
                             <ImageView
                                 android:id="@+id/imageView12"
@@ -342,28 +332,243 @@
                     </LinearLayout>
                 </HorizontalScrollView>
 
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Las 10 películas más populares hoy en este país: España"
+                    android:textColor="#FAFAFA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="173dp"
-                android:orientation="horizontal" />
+                android:layout_height="165dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Volver a ver"
+                        android:textColor="#F6F6F6"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/pelicula2"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/infiesto"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton15"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/machosalfa"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton16"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/cuestionjuridica"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton17"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/poet"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton13"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/adios"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton18"
+                                android:layout_width="71dp"
+                                android:layout_height="131dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/nohayquienviva"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="166dp"
-                android:orientation="horizontal"></LinearLayout>
+                android:layout_height="165dp"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="406dp"
-        android:layout_height="62dp"
+        android:layout_width="405dp"
+        android:layout_height="43dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton19"
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:background="@drawable/home"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

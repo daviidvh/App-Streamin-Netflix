@@ -4,11 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.proyectoprctica_eval2_guiappstreaming.databinding.ActivityBrowserBinding
+import com.example.proyectoprctica_eval2_guiappstreaming.databinding.ActivityFilmBinding
 
-class browser : AppCompatActivity() {
+class film : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityBrowserBinding.inflate(layoutInflater)
+        val binding = ActivityFilmBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var imagenUsuario= intent.getStringExtra("ImagenUsuario")
 
@@ -22,15 +23,10 @@ class browser : AppCompatActivity() {
             binding.imagenUsuario.setBackgroundResource(R.drawable.usuario4)
         }
 
-        binding.imagenUsuario.setOnClickListener(){
-            val intent= Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            intent.putExtra("ImagenUsuario",imagenUsuario)
 
-        }
 
-        binding.pelicula1.setOnClickListener(){
-            val intent= Intent(this, film::class.java)
+        binding.botonAtras.setOnClickListener(){
+            val intent= Intent(this, browser::class.java)
             startActivity(intent)
         }
     }

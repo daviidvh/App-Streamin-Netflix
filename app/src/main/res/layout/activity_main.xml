@@ -70,7 +70,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/usuario1"
+                        android:id="@+id/usuario1P"
                         android:layout_width="108dp"
                         android:layout_height="104dp"
                         android:layout_marginTop="5dp"
@@ -107,7 +107,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/usuario2"
+                        android:id="@+id/usuario2P"
                         android:layout_width="108dp"
                         android:layout_height="104dp"
                         android:layout_marginTop="5dp"
@@ -153,7 +153,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/usuario3"
+                        android:id="@+id/usuario3P"
                         android:layout_width="108dp"
                         android:layout_height="104dp"
                         android:layout_marginTop="5dp"
@@ -190,7 +190,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/usuario4"
+                        android:id="@+id/usuario4P"
                         android:layout_width="108dp"
                         android:layout_height="104dp"
                         android:layout_marginTop="5dp"

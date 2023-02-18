@@ -11,22 +11,28 @@ class film : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityFilmBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        var imagenUsuario= intent.getStringExtra("ImagenUsuario")
+        var imagenUsuarioF= intent.getStringExtra("ImagenUsuarioB")
+        var imagenAtras=""
 
-        if (imagenUsuario.equals("usuario1")){
+        if(imagenUsuarioF.equals("usuario1")){
             binding.imagenUsuario.setBackgroundResource(R.drawable.usuario1)
-        }else if (imagenUsuario.equals("usuario2")){
-            binding.imagenUsuario.setBackgroundResource(R.drawable.usuario2)
-        }else if (imagenUsuario.equals("usuario3")){
+            imagenAtras="usuario1"
+        }else if(imagenUsuarioF.equals("usuario2")){
+             binding.imagenUsuario.setBackgroundResource(R.drawable.usuario2)
+            imagenAtras="usuario2"
+        }else if (imagenUsuarioF.equals("usuario3")){
             binding.imagenUsuario.setBackgroundResource(R.drawable.usuario3)
-        }else if (imagenUsuario.equals("usuario4")){
+            imagenAtras="usuario3"
+        }else if (imagenUsuarioF.equals("usuario4")){
             binding.imagenUsuario.setBackgroundResource(R.drawable.usuario4)
+            imagenAtras="usuario4"
         }
 
 
 
         binding.botonAtras.setOnClickListener(){
             val intent= Intent(this, browser::class.java)
+            intent.putExtra("ImagenUsuarioAtras",imagenAtras)
             startActivity(intent)
         }
     }

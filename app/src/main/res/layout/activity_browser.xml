@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:background="#141414"
+    app:layout_anchorGravity="center"
     tools:context=".browser">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="412dp"
         android:layout_height="69dp"
-        android:background="#BE0B0B0B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -75,12 +75,107 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="165dp"
-                android:orientation="horizontal">
+                android:layout_height="301dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="243dp"
+                    app:srcCompat="@drawable/infesto2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="21dp"
+                            android:layout_height="22dp"
+                            android:background="@drawable/mas" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Mi lista"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="131dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/botonReproducir"
+                            android:layout_width="118dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/reproducir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton20"
+                            android:layout_width="21dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/info"
+                            android:scaleType="centerInside" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:gravity="center"
+                            android:text="Información"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="405dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Las 10 películas más populares hoy en este país: España"
+                        android:textColor="#FAFAFA"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="134dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -106,8 +201,8 @@
 
                             <ImageButton
                                 android:id="@+id/pelicula1"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/tucasaolamia"
                                 android:scaleType="centerInside" />
@@ -130,8 +225,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton4"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/it"
                                 android:scaleType="centerInside" />
@@ -154,8 +249,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton5"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/snakeeyes"
                                 android:scaleType="centerInside" />
@@ -178,8 +273,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton6"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/amoralcuadrado"
                                 android:scaleType="centerInside" />
@@ -202,8 +297,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton7"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/adios"
                                 android:scaleType="centerInside" />
@@ -226,8 +321,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton8"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/infiesto"
                                 android:scaleType="centerInside" />
@@ -250,8 +345,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton9"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/lasbrujas" />
                         </LinearLayout>
@@ -273,8 +368,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton10"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/lavidaenjuego"
                                 android:scaleType="centerInside" />
@@ -297,8 +392,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton11"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/cuestionjuridica"
                                 android:scaleType="centerInside" />
@@ -322,8 +417,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton12"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/joker"
                                 android:scaleType="centerInside" />
@@ -332,23 +427,13 @@
                     </LinearLayout>
                 </HorizontalScrollView>
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:text="Las 10 películas más populares hoy en este país: España"
-                    android:textColor="#FAFAFA"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="165dp"
+                android:layout_marginRight="10dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -385,8 +470,9 @@
 
                             <ImageButton
                                 android:id="@+id/pelicula2"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/infiesto"
@@ -401,8 +487,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton15"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/machosalfa"
@@ -417,8 +503,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton16"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/cuestionjuridica"
@@ -433,8 +519,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton17"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/poet"
@@ -449,8 +535,8 @@
 
                             <ImageButton
                                 android:id="@+id/imageButton13"
-                                android:layout_width="71dp"
-                                android:layout_height="131dp"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/adios"
@@ -478,9 +564,27 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Series más vistas"
+                        android:textColor="#F8F8F8"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -488,41 +592,126 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical" />
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton21"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/you" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton22"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/poet" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="71dp"
+                            android:layout_height="131dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton23"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/cafe" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton24"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/nieves" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton25"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/lareinadelsur" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton26"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/amoralcuadrado" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton27"
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/nohayquienviva" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </HorizontalScrollView>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="405dp"
-        android:layout_height="43dp"
+        android:layout_width="407dp"
+        android:layout_height="30dp"
+        android:background="#141414"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -548,27 +737,58 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical">
 
+            <ImageButton
+                android:id="@+id/imageButton28"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/mando" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"></LinearLayout>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton29"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/novedades2" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"></LinearLayout>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton30"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cara" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"></LinearLayout>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton31"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/descarga" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

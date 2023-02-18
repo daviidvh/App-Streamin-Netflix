@@ -13,35 +13,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        var imagenUsuario=""
+        var imagenUsuarioP=""
 
-         binding.usuario1.setOnClickListener(){
+         binding.usuario1P.setOnClickListener(){
              val intent= Intent(this, browser::class.java)
-             imagenUsuario=binding.imageButton.id.toString()
-             intent.putExtra("ImagenUsuario",imagenUsuario)
+             imagenUsuarioP= "usuario1"
+             intent.putExtra("ImagenUsuario",imagenUsuarioP)
              startActivity(intent)
 
 
          }
-        binding.usuario2.setOnClickListener(){
+        binding.usuario2P.setOnClickListener(){
             val intent= Intent(this, browser::class.java)
-            imagenUsuario="usuario2"
-            intent.putExtra("ImagenUsuario",imagenUsuario)
+            imagenUsuarioP="usuario2"
+            intent.putExtra("ImagenUsuario",imagenUsuarioP)
             startActivity(intent)
 
         }
-        binding.usuario3.setOnClickListener(){
+        binding.usuario3P.setOnClickListener(){
             val intent= Intent(this, browser::class.java)
-            imagenUsuario="usuario3"
-            intent.putExtra("ImagenUsuario",imagenUsuario)
+            imagenUsuarioP="usuario3"
+            intent.putExtra("ImagenUsuario",imagenUsuarioP)
             startActivity(intent)
 
 
         }
-        binding.usuario4.setOnClickListener(){
+        binding.usuario4P.setOnClickListener(){
             val intent= Intent(this, browser::class.java)
-            imagenUsuario="usuario4"
-            intent.putExtra("ImagenUsuario",imagenUsuario)
+            imagenUsuarioP="usuario4"
+            intent.putExtra("ImagenUsuario",imagenUsuarioP)
             startActivity(intent)
 
 

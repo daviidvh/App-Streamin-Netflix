@@ -1,10 +1,11 @@
 package com.example.proyectoprctica_eval2_guiappstreaming
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.proyectoprctica_eval2_guiappstreaming.databinding.ActivityBrowserBinding
+import android.widget.MediaController
+import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectoprctica_eval2_guiappstreaming.databinding.ActivityFilmBinding
+
 
 class film : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,5 +36,6 @@ class film : AppCompatActivity() {
             intent.putExtra("ImagenUsuarioAtras",imagenAtras)
             startActivity(intent)
         }
+
     }
 }

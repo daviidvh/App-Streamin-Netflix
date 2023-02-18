@@ -728,7 +728,7 @@
             <ImageButton
                 android:id="@+id/imageButton19"
                 android:layout_width="26dp"
-                android:layout_height="24dp"
+                android:layout_height="20dp"
                 android:background="@drawable/home"
                 android:scaleType="centerInside" />
         </LinearLayout>
@@ -742,8 +742,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton28"
-                android:layout_width="38dp"
-                android:layout_height="match_parent"
+                android:layout_width="31dp"
+                android:layout_height="25dp"
                 android:background="@drawable/mando" />
         </LinearLayout>
 
@@ -756,7 +756,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton29"
-                android:layout_width="29dp"
+                android:layout_width="26dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:background="@drawable/novedades2" />
@@ -771,8 +771,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton30"
-                android:layout_width="33dp"
-                android:layout_height="match_parent"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
                 android:background="@drawable/cara" />
         </LinearLayout>
 
@@ -785,8 +785,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton31"
-                android:layout_width="34dp"
-                android:layout_height="match_parent"
+                android:layout_width="26dp"
+                android:layout_height="20dp"
                 android:background="@drawable/descarga" />
         </LinearLayout>
     </LinearLayout>

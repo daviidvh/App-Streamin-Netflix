@@ -37,5 +37,10 @@ class film : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.imagenUsuario.setOnClickListener(){
+            val intent= Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

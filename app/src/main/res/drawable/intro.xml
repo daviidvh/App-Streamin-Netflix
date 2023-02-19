@@ -5,6 +5,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/netflixintro"/>
+            android:src="@drawable/n"/>
     </item>
 </layer-list>

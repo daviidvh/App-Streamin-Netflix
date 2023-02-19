@@ -17,39 +17,31 @@ class loggin : AppCompatActivity() {
         val binding = ActivityLogginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val analytics= FirebaseAnalytics.getInstance(this)
-        val bundle=Bundle()
-        bundle.putString("message","Integracion de firebase completada")
-        analytics.logEvent("InitScreen",bundle)
-
         title="Registro"
 
-
-        binding.btnRegistro.setOnClickListener(){
-            if (binding.edtEmail.text.isNotEmpty() && binding.edtPassword.text.isNotEmpty()){
-                FirebaseAuth.getInstance().createUserWithEmailAndPassword(binding.edtEmail.text.toString(),binding.edtPassword.text.toString()).addOnCompleteListener {
-                    if (it.isSuccessful){
-                        Toast.makeText(this, "Se ha registrado al usuario", Toast.LENGTH_SHORT).show()
-                    }else{
+        /***Hacemos el login del usuario*/
+        binding.btnIngresar.setOnClickListener(){
+            if (binding.edtEmail.text.isNotEmpty() && binding.edtPassword.text.isNotEmpty()) {
+                FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.edtEmail.text.toString(),binding.edtPassword.text.toString()
+                ).addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
+                    } else {
                         Toast.makeText(this, "Error al autentificar el usuario", Toast.LENGTH_SHORT).show()
                     }
                 }
+            }else{
+                Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
-
-        binding.btnIngresar.setOnClickListener(){
-            FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.edtEmail.text.toString(),binding.edtPassword.text.toString()).addOnCompleteListener {
-                if (it.isSuccessful){
-                    val intent= Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                }else{
-                    Toast.makeText(this, "Error al autentificar el usuario", Toast.LENGTH_SHORT).show()
-
-                }
-            }
-
+        /**Click para el registro**/
+        binding.textoregistr.setOnClickListener(){
+            val intent = Intent(this, registro::class.java)
+            startActivity(intent)
         }
 
-    }
+
 
     }
+}

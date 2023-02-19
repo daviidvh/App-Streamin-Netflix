@@ -18,5 +18,7 @@
         <item name="android:windowBackground">@drawable/netflixintro</item>
     </style>
 
+    <color name="transparente">#00FFFFFF</color>
+
 
 </resources>

@@ -28,6 +28,12 @@ class browser : AppCompatActivity() {
             imagenUsuarioB="usuario4"
         }
 
+
+        binding.botonReproducir.setOnClickListener(){
+            val intent= Intent(this, film::class.java)
+            startActivity(intent)
+        }
+
         binding.imagenUsuario.setOnClickListener(){
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -38,7 +44,11 @@ class browser : AppCompatActivity() {
             intent.putExtra("ImagenUsuarioB",imagenUsuarioB)
             startActivity(intent)
 
+        }
 
+        binding.botonInicio.setOnClickListener(){
+            val intent= Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

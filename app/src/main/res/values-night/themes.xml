@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="SplashTheme" parent="Theme.ProyectoPrácticaEVAL2GUIAppStreaming">
-        <item name="android:windowBackground">@drawable/netflixintro</item>
+        <item name="android:windowBackground">@drawable/n</item>
 
     </style>
 </resources>

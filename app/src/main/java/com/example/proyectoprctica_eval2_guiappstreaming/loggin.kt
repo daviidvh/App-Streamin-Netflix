@@ -10,14 +10,13 @@ import com.google.firebase.auth.FirebaseAuth
 
 class loggin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        /**Establecemos el tiempo que queremos que dure el splash screen**/
         Thread.sleep(2000)
+        /**Usamos el splash screen**/
         setTheme(R.style.Theme_ProyectoPrácticaEVAL2GUIAppStreaming)
         super.onCreate(savedInstanceState)
         val binding = ActivityLogginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        title="Registro"
 
         /***Hacemos el login del usuario*/
         binding.btnIngresar.setOnClickListener(){

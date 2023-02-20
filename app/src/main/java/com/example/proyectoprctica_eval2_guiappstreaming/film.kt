@@ -12,9 +12,11 @@ class film : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityFilmBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        /**Traemos la foto del activity anterior**/
         var imagenUsuarioF= intent.getStringExtra("ImagenUsuarioB")
         var imagenAtras=""
 
+        /**Establecemos la foto y almacenamos para volverla a mandar al activity de donde venimos**/
         if(imagenUsuarioF.equals("usuario1")){
             binding.imagenUsuario.setBackgroundResource(R.drawable.usuario1)
             imagenAtras="usuario1"
@@ -30,13 +32,14 @@ class film : AppCompatActivity() {
         }
 
 
-
+        /**Al hacer click nos manda a la activity del browser y le mandamos la imagen**/
         binding.botonAtras.setOnClickListener(){
             val intent= Intent(this, browser::class.java)
             intent.putExtra("ImagenUsuarioAtras",imagenAtras)
             startActivity(intent)
         }
 
+        /**Al hacer click nos manda al main que consiste en la seleccion del perfil**/
         binding.imagenUsuario.setOnClickListener(){
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)

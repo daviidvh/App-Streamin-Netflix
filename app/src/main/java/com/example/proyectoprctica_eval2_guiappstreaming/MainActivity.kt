@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         var imagenUsuarioP=""
 
-        /**Lo que havemos en este activity es que cuando presione alguno de los perfiles se mande
+        /**Lo que hacemos en este activity es que cuando presione alguno de los perfiles se mande
          * al activity browser y ademas se mande la imagen**/
          binding.usuario1P.setOnClickListener(){
              val intent= Intent(this, browser::class.java)

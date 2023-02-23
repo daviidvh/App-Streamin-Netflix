@@ -17,10 +17,7 @@ class registro : AppCompatActivity() {
         /**Hacemos el registro del usuario**/
         binding.btnRegistro.setOnClickListener() {
             if (binding.edtEmailR.text.isNotEmpty() && binding.edtPasswordR.text.isNotEmpty()){
-                FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-                    binding.edtEmailR.text.toString(),
-                    binding.edtPasswordR.text.toString()
-                ).addOnCompleteListener {
+                FirebaseAuth.getInstance().createUserWithEmailAndPassword(binding.edtEmailR.text.toString(),binding.edtPasswordR.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful) {
                         Toast.makeText(this, "Se ha registrado al usuario", Toast.LENGTH_SHORT)
                             .show()

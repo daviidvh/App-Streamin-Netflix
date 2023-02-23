@@ -21,8 +21,7 @@ class loggin : AppCompatActivity() {
         /***Hacemos el login del usuario*/
         binding.btnIngresar.setOnClickListener(){
             if (binding.edtEmail.text.isNotEmpty() && binding.edtPassword.text.isNotEmpty()) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.edtEmail.text.toString(),binding.edtPassword.text.toString()
-                ).addOnCompleteListener {
+                FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.edtEmail.text.toString(),binding.edtPassword.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful) {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)

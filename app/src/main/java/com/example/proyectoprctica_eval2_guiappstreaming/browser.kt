@@ -53,5 +53,11 @@ class browser : AppCompatActivity() {
             intent.putExtra("ImagenUsuarioB",imagenUsuarioB)
             startActivity(intent)
         }
+
+        binding.pelicula2.setOnClickListener(){
+            val intent=Intent(this,film::class.java)
+            startActivity(intent)
+
+        }
     }
 }
